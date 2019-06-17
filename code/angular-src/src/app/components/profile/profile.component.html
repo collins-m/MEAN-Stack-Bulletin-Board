@@ -1,0 +1,48 @@
+
+<div class="container">
+  <br>
+  <br>
+  <div class="row">
+    <div class="col align-self-top">
+
+      <app-recent-posts></app-recent-posts>
+
+    </div>
+
+    <div class="col align-self-top">
+
+        <app-club-memberships></app-club-memberships>
+
+      </div>
+
+
+    <div class="col-4">
+
+      <img style="width: 100%" alt="profile picture" src="../../assets/images/profile_icon.svg" alt="">
+      <h1 class="d-flex justify-content-center">{{username}}</h1>
+
+      <div class="card text-white bg-info mb-3" style="max-width: 20rem;">
+          <div class="card-header"><h3>Details</h3></div>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item">Name: {{name}}</li>
+              <li class="list-group-item">Email: {{email}}</li>
+            </ul>
+          </div>
+        </div>
+
+
+    </div>
+  </div>
+
+
+  <form (submit)="onDeleteSubmit()">
+    <fieldset>
+      <div class="form-group">
+        <label for="exampleInputName2">To delete your account, please fill out the below field and press submit</label>
+        <input type="name" name="username" class="form-control" id="exampleInputName2" placeholder="Username">
+      </div>
+    </fieldset>
+    <input type="submit" class="btn btn-danger" value="Submit">
+  </form>
+</div>

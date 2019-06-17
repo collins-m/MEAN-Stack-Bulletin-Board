@@ -1,0 +1,14 @@
+<div class="list-group">
+  <!-- <ng-container *ngFor="let post of posts | reverse"> -->
+    <ng-container *ngFor="let post of posts">
+    <a *ngIf="authService.isAuthor(post.author)" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{post.title}}</h5>
+        <button *ngIf="authService.isAuthor(post.author)" type="button" (click)="onDelete(post)" class="btn btn-primary btn-sm">Delete</button>
+      </div>
+      <br>
+      <p class="mb-1">{{post.body}}</p>
+      <small>Author: {{post.author}}</small>
+    </a>
+  </ng-container>
+</div>

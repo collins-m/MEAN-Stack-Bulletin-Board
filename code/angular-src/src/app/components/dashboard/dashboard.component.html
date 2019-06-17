@@ -1,0 +1,21 @@
+<h2 class="page-header">Dashboard</h2>
+<br>
+<div class="conatiner">
+  <form (submit)="onForumSubmit()">
+    <div class="form-group">
+        <label class="col-form-label" for="inputDefault"><h4>Create a post</h4></label>
+        <input type="text" class="form-control" [(ngModel)]="title" name="title" placeholder="Title" id="inputDefault">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="body" name="body" placeholder="Post Body" id="inputDefault">
+    </div>
+    <input type="submit" class="btn btn-primary" value="Submit">
+  </form>
+  <br>
+  <div class="row">
+    <div class="col">
+      <label>Recent Posts</label>
+      <app-forum></app-forum>
+    </div>
+  </div>
+</div>

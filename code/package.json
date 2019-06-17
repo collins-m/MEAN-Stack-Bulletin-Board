@@ -1,0 +1,24 @@
+{
+  "name": "pasii",
+  "version": "1.0.0",
+  "description": "Forum Web Application",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha \"test/**/*.js\" || exit 0",
+    "start": "node app"
+  },
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "bootstrap": "^3.4.1",
+    "cors": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-jwt": "*",
+    "socket.io": "^2.2.0"
+  },
+  "author": "Michael Collins",
+  "license": "ISC"
+}

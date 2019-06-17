@@ -1,0 +1,26 @@
+<br>
+<div class="conatiner">
+
+  <div class="row justify-content-center">
+    <div class="jumbotron">
+      <div class="conatiner">
+        <div class="row">
+          <div class="col">
+            <h1 class="display-3">Put A Soc In It</h1>
+            <p class="lead">Welcome to PASII, a hub for all things Club and Society related in DCU</p>
+            <hr class="my-4">
+            <p class="lead">
+              <a id="register" *ngIf="!authService.loggedIn()" class="btn btn-primary" [routerLink]="['/register']">Register</a>
+              <a id="login" *ngIf="!authService.loggedIn()" class="btn btn-primary" [routerLink]="['/login']">Login</a>
+              <a *ngIf="authService.loggedIn()" class="btn btn-primary" [routerLink]="['/dashboard']">Dashboard</a>
+              <a *ngIf="authService.loggedIn()" class="btn btn-primary" [routerLink]="['/clubs']">Clubs</a>
+            </p>
+          </div>
+          <div class="col">
+            <img style="width: 80%; float: right;" src="../../assets/images/sock_home.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
